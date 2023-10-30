@@ -1,7 +1,7 @@
 #first of all, breathe
 #don't let this intimidate you. break it down a part at a time. You've done all of these separately and now we're just combining them.
 '''
-Instructions: Create a list with at least 8 numbers, and make sure you have a raandom dispersement between 0-50
+Instructions: Create a list with at least 8 numbers, and make sure you have a random dispersement between 0-50
 Create a loop (which loop would be best given we know how long we're going [the length of the list]?) that runs through the entire list
 Inside of your loop, have an if/elif/else that checks AT EACH INDEX OF THE LIST:
 if the number is greater than 35: print ("greater than 35")
@@ -11,6 +11,16 @@ else (the number is less than 5)
 '''
 
 def main():
-    
-    
+
+    numbers = [4,50,38,29,16,43,22,10]
+
+    for x in numbers:
+        if x > 35:
+            print(x, " Is greater than 35")
+        elif 20 <= x <= 35:
+            print(x, " Is between 20-35")
+        elif 5 <= x < 20:
+            print(x, " Is between 5 and 20")
+        else:
+            print(x, "Is less than 5")
 main()

@@ -5,12 +5,12 @@
 
 
 def main():
+    print("Hello World!")
 
+    favcolor = "Pink"
+    birthday = "816"
 
-
-    
-    
-    
-    
+    print("My favorite color is:", favcolor)
+    print("My birthday is:", birthday)
     
 main()
