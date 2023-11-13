@@ -41,3 +41,36 @@ def main():
 
 
 main()
+
+
+number1 = random.randint(10000, 19999)
+number2 = random.randint(10000, 19999)
+number3 = random.randint(10000, 19999)
+
+grade1 = random.uniform(1.0, 4.0)
+grade2 = random.uniform(1.0, 4.0)
+grade3 = random.uniform(1.0, 4.0)
+
+rank1 = random.choices(years)
+rank2 = random.choices(years)
+rank3 = random.choices(years)
+
+# create three students and check if they get free lunch and if they qualify for honors
+kid1 = student("Athiná", 19831, rank1, "Computer Science", grade1)
+print(kid1.idNum, rank1, grade1, kid1.honors(), kid1.lotto(), winner)
+
+kid2 = student("Catalina", number2, rank2, "Fashion Design", grade2)
+print(number2, rank2, grade2, kid2.honors(), kid2.lotto(), winner)
+
+kid3 = student("Emi", number3, rank3, "spanish education", grade3)
+print(number3, rank3, grade3, kid3.honors(), kid3.lotto(), winner)
+
+
+
+    kid2 = student("Catalina", number2, rank2, "Fashion Design", grade)
+    print(number, rank, grade, kid2.honors(), kid2.lotto(), winner)
+
+    kid3 = student("Emi", number, rank, "spanish education", grade)
+    print(number, rank, grade, kid3.honors(), kid3.lotto(), winner)
+
+gpa = random.randint(99, 401) / 100

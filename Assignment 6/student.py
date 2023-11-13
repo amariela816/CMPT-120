@@ -24,15 +24,48 @@ create a function because this college is a wacky one- every day they generate a
 (disclosure: obviously there's a very small chance of your generated number matching the student id number. I just want to see that you're generating and comparing properly)
 '''
 
+import random
+grade = ["f", "s", "j", "s"]
+winner = random.randint(10000, 19999)
 class student:
-    
-    
-    
-    
-    
-    
+    def __init__(self,name,idNum,year,major,gpa):
+        self.name= name
+        self.idNum = idNum
+        self.year = year
+        self.major = major
+        self.gpa = gpa
+
+    def honors(self):
+        if self.gpa > 3.5:
+            return("true")
+        else:
+            return("false")
+
+
+
+    def lotto(self):
+        if winner == self.idNum:
+            return("Winner! Student", self.name,"gets a free lunch!" )
+        else:
+            return("Loser!")
+
+
 def main():
+    year = random.choices(grade)
     #create three students and check if they get free lunch and if they qualify for honors
-    
+    kid1 = student("Athiná", 19831, "f", "Computer Science", 3.2)
+    print(kid1.honors(), winner)
+
+    kid2 = student("Emi", 504260, "s", "Spanish", 2.9)
+    print(kid2.honors(), winner)
+
+    kid3 = student("Catalina", 22420, "jr", "Bio-Chem", 4.0)
+    print(kid3.honors(), winner)
+
+
+
+
+
+
     
 main()
